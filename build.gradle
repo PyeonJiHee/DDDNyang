@@ -28,7 +28,15 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	compileOnly group: 'com.twelvemonkeys.imageio', name: 'imageio', version: '3.6', ext: 'pom'
+	compileOnly group: 'org.imgscalr', name: 'imgscalr-lib', version: '4.2'
+	compileOnly group: 'net.coobird', name: 'thumbnailator', version: '0.4.11'
 }
+
+
+
+
 
 test {
 	useJUnitPlatform()
